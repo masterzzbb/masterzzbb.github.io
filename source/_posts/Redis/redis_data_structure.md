@@ -9,7 +9,7 @@ tags:
 
 ## Redis底层数据结构
 
-* SDS(Simple Dynamic String)
+### SDS(Simple Dynamic String)
 1. 结构
 ```C++
 struct sdshdr {
@@ -24,7 +24,7 @@ struct sdshdr {
 - 常数复杂度获取字符串长度
 - 杜绝缓冲区溢出
 ---
-* 链表
+### 链表
 1. 数据结构
 ```c++
 //链表节点
