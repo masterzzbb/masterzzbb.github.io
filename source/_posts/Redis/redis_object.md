@@ -56,4 +56,34 @@ tags:
     回收内存的算法为volatile-lru或者allkeys-lru,那么当服务器占用的内存超过来maxmemoryy选项所设置的上限值时,
     空转时间较长的部分键会被优先释放,从而回收内存.
 
+* 对象编码
 
+|编码常量|对应的底层数据结构|
+|:----:|:----:|
+|REDIS_ENCODING_INT|long类型的整数|
+|REDIS_ENCODING_EMBSTR|embstr编码的简单动态字符串|
+|REDIS_ENCODING_RAW|简单动态字符串|
+|REDIS_ENCODING_HT|字典|
+|REDIS_ENCODING_LINKEDLIST|双端列表|
+|REDIS_ENCODING_ZIPLIST|压缩列表|
+|REDIS_ENCODING_INTSET|整数集合|
+|REDIS_ENCODING_SKIPLIST|跳跃表和字典|
+
+* 不同类型和编码的对象
+
+|类型|编码|对象|
+|:----|:----|:----|
+|REDIS_STRING|REDIS_ENCODING_INT|使用整数值实现的字符串对象|
+|REDIS_STRING|REDIS_ENCODING_EMBSTR|使用embstr编码的简单动态字符串|
+|REDIS_STRING|REDIS_ENCODING_RAW|使用简单动态字符串实现的字符串对象|
+|REDIS_LIST|REDIS_ENCODING_ZIPLIST|使用压缩列表实现的列表对象|
+|REDIS_LIST|REDIS_ENCODING_LINKEDLIST|使用双端链表实现的列表对象|
+|REDIS_HASH|REDIS_ENCODING_ZIPLIST|使用压缩列表实现的哈希对象|
+|REDIS_HASH|REDIS_ENCODING_HT|使用字典实现的哈希对象|
+|REDIS_SET|REDIS_ENCODING_INTSET|使用整数集合实现的整数集合对象|
+|REDIS_SET|REDIS_ENCODING_HT|使用字典实现的集合对象|
+|REDIS_ZSET|REDIS_ENCODING_ZIPLIST|使用压缩列表实现的有序集合对象|
+|REDIS_ZSET|REDIS_ECODNIG_SKIPLIST|使用跳表和字典实现的有序集合对象|
+
+
+* 编码转换
