@@ -25,3 +25,12 @@ tags:
     //POJO类中任何布尔类型的变量,不以is为前缀,否则部分框架解析会引起序列化错误.
     Caused by: com.fasterxml.jackson.databind.JsonMappingException: (was java.lang.NullPointerException)
 ```
+* maven 版本号设置
+
+```
+mvn versions:set -DnewVersion=1.0.3-SNAPSHOP
+
+mvn versions:update-child-modules
+
+mvn versions:commit
+```
