@@ -7,10 +7,14 @@ tags:
 - Redis
 ---
 
+[TOC]
+
 ## Redis底层数据结构
 
 ### SDS(Simple Dynamic String)
+
 1. 结构
+
 ```C
 struct sdshdr {
     
@@ -19,16 +23,21 @@ struct sdshdr {
     int free;
 
     char buf[];
-
+ 
 };
 ```
+
 2. 与C字符串比较
 
 - 常数复杂度获取字符串长度
 - 杜绝缓冲区溢出
+
 ---
+
 ### 链表
+
 1. 数据结构
+
 ```C
 //链表节点
 typedef struct listNode {
@@ -57,8 +66,11 @@ typedef struct list {
 
 }list;
 ```
+
 ### 字典
+
 1. 数据结构
+
 ```C
 //字典
 typedef struct dict {
@@ -88,8 +100,11 @@ typedef struct dictType {
     void (*valDestructor)(void *private,void *obj);
 }
 ```
+
 ### 跳跃表
+
 1. 数据结构
+
 ```C
 //节点
 typedef struct zskiplistNode {
@@ -123,7 +138,9 @@ typedef struct zskiplist {
 ```
 
 ### 整数集合
+
 1. 数据结构
+
 ```C
 typedef struct intset {
 
@@ -134,5 +151,5 @@ typedef struct intset {
     int8_t contents[];
 }
 ```
-### 压缩列表
 
+### 压缩列表
