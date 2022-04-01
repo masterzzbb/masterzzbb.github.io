@@ -19,6 +19,7 @@ tags:
         }
     }
 ```
+
 ## 规范
 
 ```java
@@ -43,3 +44,13 @@ return doResult(futureD.join(),futureE.join());
 ```
 
 - 多线程
+
+- maven 版本号设置
+
+```text
+    mvn versions:set -DnewVersion=1.0.3-SNAPSHOP
+
+    mvn versions:update-child-modules
+
+    mvn versions:commit
+```
