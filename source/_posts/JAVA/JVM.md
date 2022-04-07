@@ -1,7 +1,7 @@
 ---
 title: JVM
 categories:
-- JAVA
+- Java
 tags: 
 - JVM
 ---

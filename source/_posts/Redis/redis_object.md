@@ -1,7 +1,7 @@
 ---
 title: Redis Object
 categories:
-- Redis Object
+- Redis
 tags: 
 - Redis Object
 - Redis

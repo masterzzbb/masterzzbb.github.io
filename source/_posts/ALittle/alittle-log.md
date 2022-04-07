@@ -1,9 +1,7 @@
 ---
 title: A Little...
-categories:
-- log
-tags: 
-- A Little
+categories: 
+- other
 ---
 
 # 一点点

@@ -1,7 +1,7 @@
 ---
 title: Java并发编程
 categories:
-- JAVA
+- Java
 tags: 
 - thread
 

@@ -1,7 +1,7 @@
 ---
 title: Redis RDB&AOF
 categories:
-- Redis RDB&AOF
+- Redis
 tags: 
 - Redis
 ---

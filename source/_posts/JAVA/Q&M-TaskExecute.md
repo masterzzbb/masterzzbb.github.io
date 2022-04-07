@@ -1,7 +1,7 @@
 ---
 title: TaskExecute-Q&M
 categories:
-- JAVA
+- Java
 tags: 
 - 线程
 ---

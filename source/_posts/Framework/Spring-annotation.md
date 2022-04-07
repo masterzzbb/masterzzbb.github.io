@@ -1,9 +1,9 @@
 ---
 title: Spring-annotation
 categories:
-- Framework
+- Spring
 tags: 
-- Framework
+- Spring
 ---
 
 # Spring 注解

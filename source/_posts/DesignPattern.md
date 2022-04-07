@@ -1,3 +1,11 @@
+---
+title: Design Patter
+date: 2022/04/06
+categories:
+- Design Patter
+tags: 
+- Design Patter
+---
 # Design Pattern
 
 ## Responsebility Chain

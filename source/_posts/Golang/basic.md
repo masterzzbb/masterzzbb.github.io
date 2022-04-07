@@ -1,9 +1,9 @@
+---
 title: Golang基础
 categories:
-
 - Golang
 tags: 
-- Golang基础
+- Golang
 ---
 
 # Go基础
